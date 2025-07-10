@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pomodoro-container {
+  background: #232946;
+  color: #fffffe;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.length-controls {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.length-control {
+  background: #393d63;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.length-control button {
+  background: #eebbc3;
+  color: #232946;
+  border: none;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.length-control button:disabled {
+  background: #b8c1ec;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.length-control span {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+#break-label, #session-label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.timer {
+  background: #393d63;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer-label {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+#time-left {
+  font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 2px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#start_stop, #reset {
+  background: #eebbc3;
+  color: #232946;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#start_stop:hover, #reset:hover {
+  background: #f6c7d1;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #b8c1ec;
+  letter-spacing: 1px;
+}
